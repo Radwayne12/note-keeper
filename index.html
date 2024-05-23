@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Simple Note Keeper</h1>
-    <div class="grid-three">
-        
-        <h2>Notes</h2>
-        <h2>Due Date</h2>
-        <div></div>
-
-        <input type="text" placeholder="a note:" id="js-input-note">
-        <input type="date" placeholder="due date:" id="js-due-date">
-        <button id="js-add-notes">Add</button>
-
-    </div>
+    <h1 class="main-heading">Simple Note Keeper</h1>
+    <div class="center-container">
+        <div class="notes-grid">
+            
+            <h2>Notes</h2>
+            <h2>Due Date</h2>
+            <div></div>
     
-    <div class="js-notes-populate"></div>
+            <input type="text" placeholder="a note:" id="js-input-note">
+            <input type="date" placeholder="due date:" id="js-due-date">
+            <button id="js-add-notes">Add</button>
+    
+        </div>
+        
+        <div class="js-notes-populate notes-grid"></div>
+    </div>
+
 
 
     <script src="notes.js"></script>
