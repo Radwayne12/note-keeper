@@ -33,6 +33,16 @@ function populateExistingNotes() {
 populateExistingNotes();
 
 
+addButton.addEventListener('click', ()=> populateNewNotes())
+
+function populateNewNotes() {
+  const inputValue = document.getElementById('js-input-note').value;
+  const inputDueDate = document.getElementById('js-due-date').value;
+  notesArray.push({note: inputValue, dueDate: inputDueDate})
+  document.getElementById('js-input-note').value = '';
+  populateExistingNotes();
+}
+
 
 function deleteNote(value, index) {
     value.addEventListener("click", () => {
@@ -42,3 +52,4 @@ function deleteNote(value, index) {
 };
 
 
+// localStorage.removeItem("notes")
